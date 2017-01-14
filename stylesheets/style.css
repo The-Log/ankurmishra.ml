@@ -40,8 +40,8 @@ img {
 }
 
 .wrapper.style1 {
-  background-image: url("img/background.jpeg");
-  background-position: right top; 
+  background-image: url("background.jpg");
+  background-position: right top;
 }
 
 .wrapper.style1 h1{
