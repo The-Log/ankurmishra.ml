@@ -1,0 +1,173 @@
+/*
+ * jQuery Nivo Slider v2.5.1
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2011, Gilbert Pellegrom
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 
+ * Update by Ryan S
+ * URI: http://www.sutanaryan.com/
+ */
+ 
+ 
+/* The Nivo Slider styles */
+.nivoSlider {
+	position:relative;
+}
+.nivoSlider img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	z-index: 6;
+	display: none;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display: block;
+	position: absolute;
+	z-index: 5;
+	height: 100%;
+}
+.nivo-box {
+	display: block;
+	position: absolute;
+	z-index: 5;
+}
+/* Caption styles */
+.nivo-caption {
+	z-index: 8;
+	padding: 20px 14px 40px 14px;
+	position: absolute;
+	right: 0px;
+	background: #7AB3E0;
+	width: 280px;
+	color: #fff;
+}
+
+.nivo-caption .item_title{
+	margin-top: 0px !important;
+	margin-bottom: 6px;
+	line-height: 25px;
+	font-style: italic;
+	font-size: 20px;
+	color: #fff;
+}
+
+.nivo-caption .label_price{
+	font-family: Arial;
+	font-size: 16px;
+	color: #fff;
+}
+
+.nivo-caption .item_price{
+	margin-top: 20px;
+	font-family: Arial;
+	font-size: 18px;
+	color: #fff;
+}
+
+.nivo-caption p {
+	padding: 5px;
+	margin: 0;
+	color: #fff !important;
+	line-height: 20px;
+}
+
+.nivo-caption a {
+	display: inline !important;
+	color: #fff !important;
+	text-decoration: none !important;
+}
+.nivo-caption .read-more { margin-top: 10px; }
+.nivo-caption .read-more a{
+	padding: 4px 14px;
+	
+	margin-top: 10px;
+	text-decoration: underline;
+	
+	background: #006DAE;
+	background-image:-moz-linear-gradient(50% 0% -90deg,rgb(88,159,202) 0%,rgb(0,109,174) 100%); 
+	background-image:-webkit-gradient(linear,50% 0%,50% 100%,color-stop(0, rgb(88,159,202)),color-stop(1, rgb(0,109,174)));
+	background-image:-webkit-linear-gradient(-90deg,rgb(88,159,202) 0%,rgb(0,109,174) 100%);
+	background-image:-o-linear-gradient(-90deg,rgb(88,159,202) 0%,rgb(0,109,174) 100%);
+	background-image:-ms-linear-gradient(-90deg,rgb(88,159,202) 0%,rgb(0,109,174) 100%);
+	background-image:linear-gradient(-90deg,rgb(88,159,202) 0%,rgb(0,109,174) 100%);
+
+	-moz-border-radius: 10em;
+	-webkit-border-radius: 10em;
+	border-radius: 10em;
+	
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff589fca,endColorstr=#ff006dae,GradientType=0)";
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff589fca,endColorstr=#ff006dae,GradientType=0);
+	
+	color: #fff;
+}
+
+.nivo-caption .read-more a:hover{
+	background: #006DAE;
+	
+	background-image:-moz-linear-gradient(50% 0% -90deg,rgb(0,109,174) 0%,rgb(88,159,202) 100%); 
+	background-image:-webkit-gradient(linear,50% 0%,50% 100%,color-stop(0, rgb(0,109,174)),color-stop(1, rgb(88,159,202)));
+	background-image:-webkit-linear-gradient(-90deg,rgb(0,109,174) 0%,rgb(88,159,202) 100%);
+	background-image:-o-linear-gradient(-90deg,rgb(0,109,174) 0%,rgb(88,159,202) 100%);
+	background-image:-ms-linear-gradient(-90deg,rgb(0,109,174) 0%,rgb(88,159,202) 100%);
+	background-image:linear-gradient(-90deg,rgb(0,109,174) 0%,rgb(88,159,202) 100%);
+	
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff006dae,endColorstr=#ff589fca,GradientType=0)";
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff006dae,endColorstr=#ff589fca,GradientType=0);
+}
+
+.nivo-html-caption {
+    display: none;
+}
+
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position: absolute !important;
+	top: 45% !important;
+	z-index: 9;
+	cursor: pointer;
+}
+.nivo-prevNav {
+	left: 0px;
+}
+.nivo-nextNav {
+	right: 0px;
+}
+
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav a {
+	position: relative;
+	z-index: 9;
+	cursor: pointer;
+}
+.nivo-controlNav a.active {
+	font-weight: bold;
+}
+
+/* slider navigation  */
+#slider-wrapper { margin-top: 10px;}
+
+#slider { position: relative; background: url('../images/loading.gif') no-repeat 0 0; height: 32px; display: block;}
+#slider img { position: absolute; top: 0px; left: 0px; display: none; }
+#slider a { border: 0; display: block; }
+
+.nivo-controlNav { position: absolute; right: 20px; bottom: 20px; }
+.nivo-controlNav a { float: left; margin-right: 0px; width: 20px; height: 20px; background:url('../images/bullets.png') no-repeat 0 0; display: block; text-indent: -9999px; border: 0; }
+.nivo-controlNav a.active { background-position: 0 -22px; }
+
+.nivo-directionNav a { background: url('../images/arrows.png') no-repeat 0 0; width: 30px; height: 30px; text-indent: -9999px; display: block; }
+a.nivo-nextNav { background-position: -30px 0; right: 330px; }
+a.nivo-prevNav { left: 15px; }

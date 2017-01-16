@@ -1,0 +1,85 @@
+.mashpv .mashsb-sharetext{
+    /*opacity: 0;*/
+}
+
+.mashpv .mashsb-sharetext, .mashpv .count{
+    /*opacity: 0;*/
+}
+/*div.mashsb-box .mashpv {
+    position: absolute;
+    top: 0;
+    right: 0; }
+div.mashsb-box .mashpv {
+    width: 30px;
+    height: 45px;
+    position: relative;
+    right: 0; }
+div.mashsb-box .mashpv {
+    font-size: 11px;
+    text-align: center;
+    color: #666666; }
+div.mashsb-box .mashpvTooltip {
+    font-size: 12px;
+    text-align: center;
+    color: #666666; }
+*/
+@media only screen and (max-width: 480px) {
+    div.mashsb-box .mashpv {
+        display:none;
+    }
+}
+
+
+.mashpv.mashtip {
+    position: relative;
+    /*display: inline-block;*/
+    cursor: help;
+    /*white-space: nowrap;*/
+
+}
+
+.mashpv .mashtip-content {
+    opacity: 0;
+    visibility: hidden;
+    font: 11px Arial, Helvetica;
+    text-align: center;
+    /* border-color: #AAA #555 #555 #AAA; */
+    /*border-style: solid;
+    border-width: 1px;*/
+    width: 150px;
+    padding: 5px;
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    margin-left: -76px;
+    background-color: #666;
+    color: #FFF;
+    border-radius: 2px;
+    transition: bottom .2s ease, opacity .2s ease;
+    z-index: 999999;                 
+}
+    
+.mashpv .mashtip-content:after,
+.mashpv .mashtip-content:before {
+    border-right: 16px solid transparent;
+    border-top: 16px solid #666666;
+    bottom: -15px;
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+}
+
+.mashpv .mashtip-content:before {
+    /*border-right-width: 25px;*/
+    border-top-color: #555;
+    border-top-width: 15px;
+    bottom: -15px;
+}
+
+.mashpv.mashtip:hover .mashtip-content{
+    opacity: 1;
+    visibility: visible;
+    bottom: 80px;       
+}
+

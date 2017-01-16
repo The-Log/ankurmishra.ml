@@ -1,0 +1,126 @@
+
+
+/* Reset all styles */
+.wpmchimpa-reset,
+.wpmchimpa-reset div,
+.wpmchimpa-reset span,
+.wpmchimpa-reset h1,
+.wpmchimpa-reset h2,
+.wpmchimpa-reset h3,
+.wpmchimpa-reset h4,
+.wpmchimpa-reset h5,
+.wpmchimpa-reset h6,
+.wpmchimpa-reset p,
+.wpmchimpa-reset a,
+.wpmchimpa-reset img,
+.wpmchimpa-reset fieldset,
+.wpmchimpa-reset form,
+.wpmchimpa-reset label,
+.wpmchimpa-reset legend,
+.wpmchimpa-reset table,
+.wpmchimpa-reset caption,
+.wpmchimpa-reset tbody,
+.wpmchimpa-reset tfoot,
+.wpmchimpa-reset thead,
+.wpmchimpa-reset tr,
+.wpmchimpa-reset th,
+.wpmchimpa-reset td,
+.wpmchimpa-reset button,
+.wpmchimpa-reset button:hover,
+.wpmchimpa-reset button:active,
+.wpmchimpa-reset button:focus {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    font-weight: normal;
+    color: #000;
+    background: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+.wpmchimpa-reset table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-bottom: 0;
+    border: 0;
+}
+
+.wpmchimpa-reset ol,
+.wpmchimpa-reset ul {
+    list-style: none;
+}
+
+.wpmchimpa-reset caption,
+.wpmchimpa-reset th {
+    text-align: left;
+}
+
+.wpmchimpa-reset input,
+.wpmchimpa-reset label {
+    display: block;
+}
+
+.wpmchimpa-reset button,
+.wpmchimpa-reset button:hover,
+.wpmchimpa-reset input,
+.wpmchimpa-reset input:focus,
+.wpmchimpa-reset textarea,
+.wpmchimpa-reset select {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    border: 0;
+    font-family:"Times New Roman", Times, serif;
+    font-size: 100%;
+    outline: 0;
+    color: #000;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    -moz-appearance: none;
+    -moz-border-radius: 0;
+    -ms-appearance: none;
+    -ms-border-radius: 0;
+    -o-appearance: none;
+    -o-border-radius: 0;
+    appearance: none;
+    border-radius: 0;
+    opacity: 1;
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+    -ms-box-shadow:none;
+    -o-box-shadow:none;
+    box-shadow:none;
+    clear:both;
+    text-decoration:none;
+    text-shadow:none;
+    box-sizing: border-box;
+}
+
+.wpmchimpa-reset input:focus,
+.wpmchimpa-reset textarea:focus {
+    border: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    padding: 0;
+    outline: 0;
+    -webkit-appearance: none;
+}
+
+.wpmchimpa-reset button,
+.wpmchimpa-reset input {
+    line-height: normal;
+}
+
+.wpmchimpa-reset th,
+.wpmchimpa-reset tr,
+.wpmchimpa-reset td {
+  border-top: 0;
+  border-bottom: 0;
+  border: 0 !important;
+}
