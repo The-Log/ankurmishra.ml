@@ -50,7 +50,7 @@ Copyright: Hercus Monte, http://hercusmonte.com
 6.0 Accessibility
 7.0 Alignments
 8.0 Clearings
-9.0 Widgets
+9.0 Widgets`
 10.0 Content
 	10.1 Header
 	10.2 Posts and pages
@@ -109,7 +109,6 @@ body {
   /* Fallback for when there is no custom background color defined. */
 }
 
-article,
 aside,
 details,
 figcaption,
@@ -121,9 +120,16 @@ nav,
 section {
   display: block;
   background-color: #424242;
-  color: #05E9FF;
+  color: #FFFFFF;
+  text-align: center;
 }
 
+h1, article{
+  display: block;
+  background-color: #424242;
+  color: #FFFFFF;
+  text-align: left;
+}
 ol, ul {
   list-style: none;
 }
@@ -6447,6 +6453,7 @@ body.author #masthead .site-logo-link img, body.edit-profile #masthead .site-log
   position: relative;
   z-index: 40;
   width: 100%;
+  background-color: #424242;
 }
 .error404 .hentry.post-thumbnail,
 .page .hentry.post-thumbnail,
@@ -6549,7 +6556,7 @@ body.author #masthead .site-logo-link img, body.edit-profile #masthead .site-log
   font-weight: normal;
   margin-bottom: 20px;
   display: block;
-  color: #222222;
+  color: #2196F3;
   font-weight: 300;
 }
 .error404 .entry-author-box,
@@ -6557,7 +6564,7 @@ body.author #masthead .site-logo-link img, body.edit-profile #masthead .site-log
 .single .entry-author-box {
   display: block;
   margin: 20px -15px 0;
-  border-top: 1px solid #DFDFDF;
+  border-top: 1px solid #000000;
   padding: 20px 20px 20px 100px;
   position: relative;
   font-size: 13px;
@@ -6612,7 +6619,6 @@ body.author #masthead .site-logo-link img, body.edit-profile #masthead .site-log
 .single .cat-links,
 .single .tags-links {
   display: block;
-  border-top: 1px solid #DFDFDF;
   position: relative;
   padding: 15px 15px 15px 100px;
 }
