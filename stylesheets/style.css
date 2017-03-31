@@ -9,6 +9,9 @@ body {
   font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: white;
   background-color: black;
+  opacity: 0;
+  transition: opacity 2s;
+  -webkit-transition: opacity 2s;
 }
 html {
   width: 100%;
