@@ -253,7 +253,7 @@ a:focus {
 }
 @media (min-width: 767px) {
   .content-section {
-    padding-top: 100px;
+    padding-top: 10 0px;
   }
   .download-section {
     padding: 100px 0;
